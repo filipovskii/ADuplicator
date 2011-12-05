@@ -11,5 +11,6 @@ public class CustomTokenizerTest {
   @Test
   public void construction() throws Exception {
     Reader r = createMock(Reader.class);
+    CustomTokenizer tokenizer = CustomTokenizer.lineTokenizer(r);
   }
 }
